@@ -6,6 +6,7 @@ import Projects from "./components/portfolio/Projects";
 import Experience from "./components/portfolio/Experience";
 import Contact from "./components/portfolio/Contact";
 import Footer from "./components/portfolio/Footer";
+import BackToTop from "./components/portfolio/BackToTop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
+      <BackToTop />
     </div>
   );
 }

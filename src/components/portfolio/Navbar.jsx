@@ -18,7 +18,7 @@ export default function Navbar() {
           href="#home"
           className="text-xl font-bold text-amber-400 hover:text-amber-300 transition-colors"
         >
-          Portfolio
+          JayScripts
         </a>
         <button
           className="md:hidden flex flex-col gap-1.5 p-2 text-slate-300 hover:text-white"
@@ -30,7 +30,9 @@ export default function Navbar() {
               isOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
-          <span className={`block w-6 h-0.5 bg-current ${isOpen ? "opacity-0" : ""}`} />
+          <span
+            className={`block w-6 h-0.5 bg-current ${isOpen ? "opacity-0" : ""}`}
+          />
           <span
             className={`block w-6 h-0.5 bg-current transition-transform ${
               isOpen ? "-rotate-45 -translate-y-2" : ""
