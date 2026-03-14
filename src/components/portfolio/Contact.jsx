@@ -50,19 +50,19 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 bg-slate-900">
+    <section id="contact" className="py-24 px-6 bg-white dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-16 border-b-2 border-amber-500 w-fit pb-2">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-16 border-b-2 border-amber-500 w-fit pb-2">
           Get In Touch
         </h2>
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-slate-300 mb-6 leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
               Have a project in mind or want to chat? I'd love to hear from you.
             </p>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="text-amber-400 hover:text-amber-300 font-medium text-lg transition-colors"
+              className="text-amber-600 dark:text-amber-400 hover:text-amber-500 dark:hover:text-amber-300 font-medium text-lg transition-colors"
             >
               {personalInfo.email}
             </a>
@@ -75,7 +75,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+              className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
             />
             <input
               type="email"
@@ -84,7 +84,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+              className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
             />
             <input
               type="text"
@@ -93,7 +93,7 @@ export default function Contact() {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+              className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
             />
             <textarea
               name="message"
@@ -102,7 +102,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none"
+              className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none"
             />
             <button
               type="submit"

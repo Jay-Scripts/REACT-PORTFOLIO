@@ -4,18 +4,18 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-slate-950"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-slate-100 dark:bg-slate-950 transition-colors duration-300"
     >
-      <p className="text-amber-400 font-medium tracking-widest uppercase text-sm mb-4">
+      <p className="text-amber-600 dark:text-amber-400 font-medium tracking-widest uppercase text-sm mb-4">
         Hello, I'm
       </p>
-      <h1 className="text-5xl md:text-7xl font-bold text-white mb-2">
+      <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-2">
         {personalInfo.name}
       </h1>
-      <h2 className="text-xl md:text-2xl text-amber-400 mb-4">
+      <h2 className="text-xl md:text-2xl text-amber-600 dark:text-amber-400 mb-4">
         {personalInfo.title}
       </h2>
-      <p className="text-slate-400 text-lg max-w-xl mb-12">
+      <p className="text-slate-600 dark:text-slate-400 text-lg max-w-xl mb-12">
         {personalInfo.tagline}
       </p>
       <div className="flex flex-wrap gap-4 justify-center">
@@ -27,7 +27,7 @@ export default function Hero() {
         </a>
         <a
           href="#contact"
-          className="px-8 py-3 border border-amber-500 text-amber-400 font-semibold rounded-lg hover:bg-amber-500/10 transition-colors"
+          className="px-8 py-3 border border-amber-500 text-amber-600 dark:text-amber-400 font-semibold rounded-lg hover:bg-amber-500/10 transition-colors"
         >
           Get In Touch
         </a>

@@ -10,7 +10,7 @@ import BackToTop from "./components/portfolio/BackToTop";
 
 function App() {
   return (
-    <div className="bg-slate-950 text-white">
+    <div className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white transition-colors duration-300">
       <Navbar />
       <Hero />
       <About />
