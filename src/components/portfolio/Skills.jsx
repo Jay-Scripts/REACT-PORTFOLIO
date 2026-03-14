@@ -1,4 +1,5 @@
 import { skills } from "../../data/portfolioData";
+import { skillIcons } from "./skillIcons";
 
 export default function Skills() {
   const skillCategories = [
@@ -26,8 +27,16 @@ export default function Skills() {
                 {category.items.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-slate-800 text-slate-300 rounded-lg text-sm"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 text-slate-300 rounded-lg text-sm hover:bg-slate-700 hover:border-slate-600 border border-transparent transition-all duration-200"
                   >
+                    {(() => {
+                      const Icon = skillIcons[skill];
+                      return Icon ? (
+                        <span className="shrink-0">
+                          <Icon className="size-5" />
+                        </span>
+                      ) : null;
+                    })()}
                     {skill}
                   </span>
                 ))}
