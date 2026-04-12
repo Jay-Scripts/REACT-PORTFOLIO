@@ -13,7 +13,7 @@ export default function Experience() {
         <div className="space-y-12 relative border-l-2 border-slate-300 dark:border-slate-800 pl-8 md:pl-12">
           {experience.map((job) => (
             <div key={job.id} className="relative">
-              <div className="absolute -left-[41px] md:-left-[53px] top-1 w-4 h-4 rounded-full bg-amber-500" />
+              <div className="absolute -left-[40px] md:-left-[56px] top-1 w-4 h-4 rounded-full bg-amber-500" />
               <span className="text-amber-600 dark:text-amber-400 text-sm font-medium">
                 {job.period}
               </span>
