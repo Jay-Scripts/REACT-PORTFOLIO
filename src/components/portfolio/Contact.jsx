@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { personalInfo } from "../../data/portfolioData";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -41,7 +41,7 @@ export default function Contact() {
           message: data.error || "Something went wrong.",
         });
       }
-    } catch (err) {
+    } catch {
       setStatus({
         type: "error",
         message: "Could not reach server. Make sure the backend is running.",

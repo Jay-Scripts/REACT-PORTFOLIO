@@ -10,9 +10,18 @@ export const personalInfo = {
 };
 
 export const skills = {
-  frontend: ["React", "Vue.js", "TypeScript", "HTML5", "CSS3", "Tailwind"],
-  backend: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB"],
-  tools: ["Git", "Docker", "AWS", "Figma", "VS Code"],
+  frontend: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Tailwind CSS",
+    "Flowbite",
+    "Bootstrap",
+  ],
+  backend: ["PHP", "Node.js", "MySQL", "PostgreSQL"],
+  tools: ["VS Code", "Cursor", "Git", "GitHub", "Postman", "XAMPP", "Laragon"],
 };
 
 export const projects = [
@@ -70,6 +79,14 @@ export const experience = [
   },
   {
     id: 3,
+    role: "Junior Developer",
+    company: "Agency ABC",
+    period: "2018 – 2020",
+    description:
+      "Built responsive websites and learned modern JavaScript frameworks. Contributed to 15+ client projects.",
+  },
+  {
+    id: 4,
     role: "Junior Developer",
     company: "Agency ABC",
     period: "2018 – 2020",

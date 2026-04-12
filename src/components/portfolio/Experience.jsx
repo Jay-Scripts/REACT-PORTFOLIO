@@ -2,7 +2,10 @@ import { experience } from "../../data/portfolioData";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 px-6 bg-slate-100 dark:bg-slate-950 transition-colors duration-300">
+    <section
+      id="experience"
+      className="py-24 px-6 bg-slate-100 dark:bg-slate-950 transition-colors duration-300"
+    >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-16 border-b-2 border-amber-500 w-fit pb-2">
           Experience
@@ -17,7 +20,9 @@ export default function Experience() {
               <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-1">
                 {job.role}
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 font-medium">{job.company}</p>
+              <p className="text-slate-600 dark:text-slate-400 font-medium">
+                {job.company}
+              </p>
               <p className="text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
                 {job.description}
               </p>
