@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+import profilePhoto from "../../assets/jr pic.png";
 import { personalInfo } from "../../data/portfolioData";
 
 export default function Hero() {
@@ -9,6 +12,18 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/3 h-[min(90vw,36rem)] w-[min(90vw,36rem)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-400/10 blur-3xl dark:bg-amber-500/10" />
         <div className="bg-grid-slate absolute inset-0 opacity-40 dark:opacity-25" />
+      </div>
+      <div className="mb-8 rounded-full bg-gradient-to-br from-amber-400 via-amber-200 to-slate-200 p-1 shadow-2xl shadow-amber-500/20 dark:from-amber-400 dark:via-slate-700 dark:to-slate-900">
+        <div className="relative size-36 overflow-hidden rounded-full bg-slate-100 ring-4 ring-white/80 dark:bg-slate-800 dark:ring-slate-950/80 md:size-44">
+          <Image
+            src={profilePhoto}
+            alt={`${personalInfo.name} portrait`}
+            priority
+            sizes="(min-width: 768px) 176px, 144px"
+            className="object-cover"
+            fill
+          />
+        </div>
       </div>
       <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-amber-600 dark:text-amber-400">
         Hello, I&apos;m
